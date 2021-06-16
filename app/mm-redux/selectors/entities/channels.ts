@@ -948,7 +948,7 @@ export function makeGetChannelsForIds(): (state: GlobalState, ids: string[]) => 
     return createSelector(
         getAllChannels,
         (state: GlobalState, ids: string[]) => ids,
-        (allChannels, ids) => {
+        (allChannels, ids = []) => {
             return ids.map((id) => allChannels[id]);
         },
     );
