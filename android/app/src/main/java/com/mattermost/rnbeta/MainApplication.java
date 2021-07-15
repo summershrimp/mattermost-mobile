@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.summershrimp.rnbeta;
 
 import android.content.Context;
 import android.content.RestrictionsManager;
@@ -10,8 +10,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.mattermost.share.RealPathUtil;
-import com.mattermost.share.ShareModule;
+import com.summershrimp.share.RealPathUtil;
+import com.summershrimp.share.ShareModule;
 import com.wix.reactnativenotifications.RNNotificationsPackage;
 
 import com.reactnativenavigation.NavigationApplication;
@@ -37,6 +37,7 @@ import com.facebook.soloader.SoLoader;
 
 import com.facebook.react.bridge.JSIModulePackage;
 
+import com.getui.reactnativegetui.GetuiPackage;
 
 public class MainApplication extends NavigationApplication implements INotificationsApplication, INotificationsDrawerApplication {
   public static MainApplication instance;
@@ -81,15 +82,16 @@ private final ReactNativeHost mReactNativeHost =
               public ReactModuleInfoProvider getReactModuleInfoProvider() {
                 return () -> {
                   Map<String, ReactModuleInfo> map = new HashMap<>();
-                  map.put("MattermostManaged", new ReactModuleInfo("MattermostManaged", "com.mattermost.rnbeta.MattermostManagedModule", false, false, false, false, false));
-                  map.put("MattermostShare", new ReactModuleInfo("MattermostShare", "com.mattermost.share.ShareModule", false, false, true, false, false));
-                  map.put("NotificationPreferences", new ReactModuleInfo("NotificationPreferences", "com.mattermost.rnbeta.NotificationPreferencesModule", false, false, false, false, false));
-                  map.put("RNTextInputReset", new ReactModuleInfo("RNTextInputReset", "com.mattermost.rnbeta.RNTextInputResetModule", false, false, false, false, false));
+                  map.put("MattermostManaged", new ReactModuleInfo("MattermostManaged", "com.summershrimp.rnbeta.MattermostManagedModule", false, false, false, false, false));
+                  map.put("MattermostShare", new ReactModuleInfo("MattermostShare", "com.summershrimp.share.ShareModule", false, false, true, false, false));
+                  map.put("NotificationPreferences", new ReactModuleInfo("NotificationPreferences", "com.summershrimp.rnbeta.NotificationPreferencesModule", false, false, false, false, false));
+                  map.put("RNTextInputReset", new ReactModuleInfo("RNTextInputReset", "com.summershrimp.rnbeta.RNTextInputResetModule", false, false, false, false, false));
                   return map;
                 };
               }
             }
       );
+      packages.add(new GetuiPackage());
 
       return packages;
     }

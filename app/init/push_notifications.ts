@@ -33,6 +33,8 @@ import {t} from '@utils/i18n';
 
 import type {DispatchFunc} from '@mm-redux/types/actions';
 
+import '@init/getui_notifications'
+
 const CATEGORY = 'CAN_REPLY';
 const REPLY_ACTION = 'REPLY_ACTION';
 const AndroidNotificationPreferences = Platform.OS === 'android' ? NativeModules.NotificationPreferences : null;

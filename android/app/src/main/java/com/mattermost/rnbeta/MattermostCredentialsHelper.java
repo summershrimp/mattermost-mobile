@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.summershrimp.rnbeta;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,9 +12,9 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableMap;
 import com.oblador.keychain.KeychainModule;
 
-import com.mattermost.react_native_interface.ResolvePromise;
-import com.mattermost.react_native_interface.AsyncStorageHelper;
-import com.mattermost.react_native_interface.KeysReadableArray;
+import com.summershrimp.react_native_interface.ResolvePromise;
+import com.summershrimp.react_native_interface.AsyncStorageHelper;
+import com.summershrimp.react_native_interface.KeysReadableArray;
 
 public class MattermostCredentialsHelper {
     static final String CURRENT_SERVER_URL = "@currentServerUrl";

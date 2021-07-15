@@ -1,9 +1,9 @@
-package com.mattermost.share;
+package com.summershrimp.share;
 
 import android.os.Bundle;
 
 import com.facebook.react.ReactActivity;
-import com.mattermost.rnbeta.MainApplication;
+import com.summershrimp.rnbeta.MainApplication;
 
 public class ShareActivity extends ReactActivity {
     @Override

@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.summershrimp.rnbeta;
 
 import android.os.Bundle;
 
@@ -10,6 +10,8 @@ import android.content.res.Configuration;
 import com.reactnativenavigation.NavigationActivity;
 import com.github.emilioicai.hwkeyboardevent.HWKeyboardEventModule;
 
+import com.getui.reactnativegetui.GetuiModule;
+
 public class MainActivity extends NavigationActivity {
     private boolean HWKeyboardConnected = false;
 
@@ -18,6 +20,7 @@ public class MainActivity extends NavigationActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.launch_screen);
         setHWKeyboardConnected();
+        GetuiModule.initPush(this);
     }
 
     @Override

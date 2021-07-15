@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.summershrimp.rnbeta;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -23,7 +23,7 @@ import com.wix.reactnativenotifications.core.AppLifecycleFacade;
 import com.wix.reactnativenotifications.core.JsIOHelper;
 import static com.wix.reactnativenotifications.Defs.NOTIFICATION_RECEIVED_EVENT_NAME;
 
-import com.mattermost.react_native_interface.ResolvePromise;
+import com.summershrimp.react_native_interface.ResolvePromise;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

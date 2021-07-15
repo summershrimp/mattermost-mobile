@@ -58,5 +58,9 @@ allprojects {
         maven {
             url "$rootDir/../node_modules/detox/Detox-android"
         }
+
+        maven {
+            url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/"
+        }
     }
 }

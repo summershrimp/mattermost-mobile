@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.summershrimp.rnbeta;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -18,8 +18,8 @@ import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.uimanager.events.RCTEventEmitter;
-import com.mattermost.share.RealPathUtil;
-import com.mattermost.share.ShareModule;
+import com.summershrimp.share.RealPathUtil;
+import com.summershrimp.share.ShareModule;
 
 import java.io.FileNotFoundException;
 import java.io.File;

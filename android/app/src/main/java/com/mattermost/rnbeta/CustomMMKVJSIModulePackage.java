@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.summershrimp.rnbeta;
 
 import com.facebook.react.bridge.JSIModulePackage;
 import com.facebook.react.bridge.JSIModuleSpec;

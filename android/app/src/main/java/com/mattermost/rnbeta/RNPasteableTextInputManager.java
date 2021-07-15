@@ -1,4 +1,4 @@
-package com.mattermost.rnbeta;
+package com.summershrimp.rnbeta;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.inputmethod.EditorInfoCompat;
