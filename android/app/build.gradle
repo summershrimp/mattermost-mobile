@@ -145,7 +145,7 @@ android {
             MEIZU_APP_KEY: "",
             XIAOMI_APP_ID: "",
             XIAOMI_APP_KEY: "",
-            HUAWEI_APP_ID: "",
+            HUAWEI_APP_ID: "104533879",
             OPPO_APP_KEY: "",
             OPPO_APP_SECRET: "",
             VIVO_APP_ID: "",

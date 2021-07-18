@@ -9,14 +9,18 @@ import {
     Registered,
 } from 'react-native-notifications';
 
-import { NativeAppEventEmitter, Alert }  from 'react-native';
+import { NativeEventEmitter, NativeModules, NativeAppEventEmitter, Alert }  from 'react-native';
+import { EventsRegistry } from 'react-native-notifications/lib/dist/events/EventsRegistry';
 
 export var receiveRemoteNotificationSub = NativeAppEventEmitter.addListener(
     'receiveRemoteNotification',
     (notification) => {
+        var emitter = new NativeEventEmitter(NativeModules.RNEventEmitter)
         switch (notification.type) {
             case "cid":
-                Alert.alert('初始化获取到cid',JSON.stringify(notification))
+                Alert.alert("cid get", notification)
+                var msg: Registered = {deviceToken: notification.cid}
+                emitter.emit('remoteNotificationsRegistered', msg)
                 break;
             case 'payload':
                 Alert.alert('payload 消息通知',JSON.stringify(notification))

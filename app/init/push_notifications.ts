@@ -1,7 +1,7 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 
-import {AppState, NativeModules, Platform} from 'react-native';
+import {AppState, NativeModules, Platform, Alert} from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 import {
     Notification,
@@ -213,6 +213,7 @@ class PushNotifications {
     };
 
     onRemoteNotificationsRegistered = (event: Registered) => {
+        Alert.alert('初始化获取到cid',JSON.stringify(event))
         if (!this.configured) {
             const {deviceToken} = event;
             let prefix;
